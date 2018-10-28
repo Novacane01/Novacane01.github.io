@@ -113,7 +113,6 @@
         function getRoutes() {
             // The web page to be fetched
             var reqParams = webEndpoint+"?origin="+document.getElementById("origin").value+"&dist="+document.getElementById("dist").value;
-            
             // The fetch call and corresponding Promises
             toggleLoading();
             fetch(new Request(reqParams, {method: "POST"}))
